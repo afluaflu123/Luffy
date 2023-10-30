@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/afluaflu123/Nancy-V3.git /Nancy
+  git clone https://github.com/afluaflu123/Luffy.git /Luffy
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Nancy
+  git clone $UPSTREAM_REPO /Luffy
 fi
-cd /Nancy
+cd /Luffy
 pip3 install -U -r requirements.txt
-echo "Nancy Bot V3 🎗️"
+echo "Luffy Bot V2 🌱"
 python3 bot.py
