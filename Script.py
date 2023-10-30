@@ -13,7 +13,7 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
 
     HELPER_TXT = """<b><i>Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</i></b>"""
     
-    ABOUT_TXT = """<b>◆ Mʏ Nᴀᴍᴇ : <a href='https://t.me/Oru_adaar_Robot'>♡ Nᴀɴᴄʏ ᵛ³·⁰</a>
+    ABOUT_TXT = """<b>◆ Mʏ Nᴀᴍᴇ : <a href='https://t.me/Neon_X_Bot'>Lᴜғғʏᵛ²</a>
 ◆ Dᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/Hacker_Jr'>HᴀᴄKᴇʀ Jʀ 〆⁪⁬⁮⁮⁮</a>
 ◆ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʀᴏɢʀᴀᴍ</a>
 ◆ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/'>Pʏᴛʜᴏɴ 3</a>
@@ -24,9 +24,7 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
     SOURCE_TXT = """<b>
 ◆ Tʜɪꜱ Bᴏᴛ Iꜱ Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ
 
-◆ Tʜɪꜱ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <u>Pʀɪᴠᴀᴛᴇ</u> 
-
-◆ Pᴜʙʟɪᴄ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href='https://github.com/Joelkb/DQ-The-File-Donor'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>"""
+◆ Tʜɪꜱ Bᴏᴛ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ ~ <u>Pʀɪᴠᴀᴛᴇ</u></b>"""
 
     MANUELFILTER_TXT = """<b><u>FILTERS COMMANDS</u></b>
 
@@ -42,7 +40,7 @@ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Gʀᴏᴜᴘ I Wɪʟʟ Gɪᴠᴇ Mᴏᴠ
 • ʙᴜᴛᴛᴏɴs sʜᴏᴜʟᴅ ʙᴇ ᴘʀᴏᴘᴇʀʟʏ ᴘᴀʀsᴇᴅ ᴀs ᴍᴀʀᴋᴅᴏᴡɴ ꜰᴏʀᴍᴀᴛ.
 
 <b><u>URL BUTTONS:-</u></b>
-<code>[Button Text](buttonurl:https://t.me/Oru_adaar_Robot)</code>
+<code>[Button Text](buttonurl:https://t.me/Neon_X_Bot)</code>
 
 <b><u>ALERT BUTTONS:-</u></b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
