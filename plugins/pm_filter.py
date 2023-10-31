@@ -294,7 +294,7 @@ async def language_check(bot, query):
             #await save_group_settings(query.message.chat.id, 'is_shortlink', False)
             #ENABLE_SHORTLINK = False
         pre = 'filep' if settings['file_secure'] else 'file'            
-        elif settings['button']:
+        if settings["button"]:
             btn = [
                 [
                     InlineKeyboardButton(
