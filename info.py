@@ -48,7 +48,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', 'None')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+BOT_START_TIME = time()
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
+
 PICS = (environ.get('PICS', 'https://telegra.ph/file/3e8a3865af813840144d4.jpg https://telegra.ph/file/abec213a015b543f1d784.jpg')).split()
 APICS = (environ.get('APICS', 'https://telegra.ph/file/3e6e5b25be2bc72c7d3d3.jpg https://telegra.ph/file/204cb2f3e2086cc9e2582.jpg')).split()
 NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/890be6028de4a061e098d.jpg")
@@ -122,6 +124,9 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 REQ_CHANNEL = environ.get("REQ_CHANNEL", False)
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
+
+#Languages
+LANGUAGES = ["malayalam", "tamil", "english", "hindi", "telugu", "kannada"]
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
