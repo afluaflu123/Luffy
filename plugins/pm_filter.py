@@ -109,18 +109,11 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    btn.insert(0, 
-                [
-                    InlineKeyboardButton("❗️ ʟᴀɴɢᴜᴀɢᴇs ❗️", callback_data=f"select_lang#{req}"),
-                ]
-            )
-
-        else:
-    btn.insert(0, 
-                [
-                    InlineKeyboardButton("❗️ ʟᴀɴɢᴜᴀɢᴇs ❗️", callback_data=f"select_lang#{req}"),
-                ]
-            )
+        btn.insert(0, 
+        [
+            InlineKeyboardButton("❗️ ʟᴀɴɢᴜᴀɢᴇs ❗️", callback_data=f"select_lang#{req}")               
+        ]
+    )
                 
     if 0 < offset <= 10:
         off_set = 0
@@ -1061,8 +1054,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f"⇓ {search} ⇓", "neosub"),
-            InlineKeyboardButton(f"⌗ Iɴꜰᴏ", "reqinfo")       
+            InlineKeyboardButton("❗️ ʟᴀɴɢᴜᴀɢᴇs ❗️", callback_data=f"select_lang#{message.from_user.id}")       
         ]
     )
     if offset != "":
