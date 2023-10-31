@@ -145,7 +145,7 @@ async def next_page(bot, query):
         )
     except MessageNotModified:
         pass
-    await query.answer()d
+    await query.answer()
 
 #SpellCheck bug fixing
 @Client.on_callback_query(filters.regex(r"^spol"))
