@@ -89,10 +89,10 @@ async def next_page(bot, query):
     settings = await get_settings(query.message.chat.id)
     #if 'is_shortlink' in settings.keys():
         #ENABLE_SHORTLINK = settings['is_shortlink']
-    else:
-        await save_group_settings(query.message.chat.id, 'is_shortlink', False)
-        ENABLE_SHORTLINK = False
-    if ENABLE_SHORTLINK == True:
+    #else:
+        #await save_group_settings(query.message.chat.id, 'is_shortlink', False)
+        #ENABLE_SHORTLINK = False
+    #if ENABLE_SHORTLINK == True:
         if settings['button']:
             btn = [
                 [
@@ -315,38 +315,15 @@ async def language_check(bot, query):
     files, offset, total_results = await get_search_results(query.message.chat.id, movie, offset=0, filter=True)
     if files:
         settings = await get_settings(query.message.chat.id)
-        temp.SEND_ALL_TEMP[query.from_user.id] = files
-        req = userid
-        if 'is_shortlink' in settings.keys():
-            ENABLE_SHORTLINK = settings['is_shortlink']
-        else:
-            await save_group_settings(query.message.chat.id, 'is_shortlink', False)
-            ENABLE_SHORTLINK = False
-        pre = 'filep' if settings['file_secure'] else 'file'
-        if ENABLE_SHORTLINK and settings['button']:
-            btn = [
-                [
-                    InlineKeyboardButton(
-                        text=f"📁 {get_size(file.file_size)} ➭ {file.file_name}", url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
-                    ),
-                ]
-                for file in files
-            ]
-        elif ENABLE_SHORTLINK and not settings['button']:
-            btn = [
-                [
-                    InlineKeyboardButton(
-                        text=f"{file.file_name}",
-                        url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
-                    ),
-                    InlineKeyboardButton(
-                        text=f"{get_size(file.file_size)}",
-                        url=await get_shortlink(query.message.chat.id, f"https://telegram.me/{temp.U_NAME}?start=files_{file.file_id}")
-                    ),
-                ]
-                for file in files
-            ]
-        elif settings['button'] and not ENABLE_SHORTLINK:
+        #temp.SEND_ALL_TEMP[query.from_user.id] = files
+        #req = userid
+        #if 'is_shortlink' in settings.keys():
+            #ENABLE_SHORTLINK = settings['is_shortlink']
+        #else:
+            #await save_group_settings(query.message.chat.id, 'is_shortlink', False)
+            #ENABLE_SHORTLINK = False
+        pre = 'filep' if settings['file_secure'] else 'file'            
+        elif settings['button']:
             btn = [
                 [
                     InlineKeyboardButton(
