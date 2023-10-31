@@ -15,6 +15,7 @@ from typing import List
 from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
+from info import BOT_START_TIME
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -42,6 +43,8 @@ class temp(object):
     B_NAME = None
     B_LINK = None
     SETTINGS = {}
+    KEYWORD = {}
+    SEND_ALL_TEMP = {}
 
 async def is_subscribed(bot, query):
     if not AUTH_CHANNEL and not REQ_CHANNEL:
